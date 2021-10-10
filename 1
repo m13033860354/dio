@@ -1,0 +1,22 @@
+#include
+using namespace std;
+int JieCheng(int n)//求阶乘函数
+{
+if (n <= 0)
+{
+cout << "bug here!" << endl;
+return 1;
+}
+else if (n == 1)
+{
+return 1;
+}
+else
+{
+return n* JieCheng(n-1);
+}
+}
+int main()
+{
+cout << JieCheng(5) << endl;return 0;
+}
